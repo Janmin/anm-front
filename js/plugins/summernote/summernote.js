@@ -2073,7 +2073,7 @@
       },
       image: {
         image: 'Picture',
-        insert: 'Insert Image',
+        insert: '插入图片',
         resizeFull: 'Resize Full',
         resizeHalf: 'Resize Half',
         resizeQuarter: 'Resize Quarter',
@@ -2086,10 +2086,10 @@
         shapeNone: 'Shape: None',
         dragImageHere: 'Drag image or text here',
         dropImage: 'Drop image or Text',
-        selectFromFiles: 'Select from files',
+        selectFromFiles: '选择本地文件',
         maximumFileSize: 'Maximum file size',
         maximumFileSizeError: 'Maximum file size exceeded.',
-        url: 'Image URL',
+        url: '图片url',
         remove: 'Remove Image'
       },
       video: {
@@ -6119,14 +6119,14 @@
 
       var body = '<div class="form-group note-group-select-from-files">' +
                    '<label>' + lang.image.selectFromFiles + '</label>' +
-                   '<input class="note-image-input form-control" type="file" name="files" accept="image/*" multiple="multiple" />' +
+                   '<input class="note-image-input form-control" type="file" name="files" accept="image/gif,image/jpeg,image/jpg,image/png,image/bmp" multiple="multiple" />' +
                    imageLimitation +
                  '</div>' +
                  '<div class="form-group note-group-image-url" style="overflow:auto;">' +
                    '<label>' + lang.image.url + '</label>' +
                    '<input class="note-image-url form-control col-md-12" type="text" />' +
                  '</div>';
-      var footer = '<button href="#" class="btn btn-primary note-image-btn disabled" disabled>' + lang.image.insert + '</button>';
+      var footer = '<button href="#" class="btn btn-info note-image-btn disabled" disabled>' + lang.image.insert + '</button>';
 
       this.$dialog = ui.dialog({
         title: lang.image.insert,
